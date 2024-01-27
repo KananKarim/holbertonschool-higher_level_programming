@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 from sys import argv
 
+
 def args():
+
     if len(argv) == 1:
         print("0 arguments.")
         return
@@ -15,6 +17,7 @@ def args():
     for item in argv:
         counter += 1
         print("{}: {}".format(counter, item))
-        
+
+
 if __name__ == "__main__":
     args()
