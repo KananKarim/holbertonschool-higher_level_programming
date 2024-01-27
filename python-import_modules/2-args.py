@@ -8,7 +8,7 @@ def args():
         print("0 arguments.")
         return
     if len(argv) == 2:
-        print("1 argument")
+        print("1 argument:")
         print("1: {}".format(argv[1]))
         return
     argv.pop(0)
