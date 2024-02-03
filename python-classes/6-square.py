@@ -6,8 +6,8 @@ class Square:
     """ Body of the class """
     def __init__(self, size=0, position=(0, 0)):
         """ Initilazier method """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -26,6 +26,7 @@ class Square:
                 len(value) != 2 or
                 value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
 
     @size.setter
     def size(self, value):
