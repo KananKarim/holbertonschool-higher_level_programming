@@ -3,6 +3,7 @@
 
 
 class Square:
+    """ Body of class """
     def __init__(self, size=0):
         """ İnitializer method """
         self.__size = size
