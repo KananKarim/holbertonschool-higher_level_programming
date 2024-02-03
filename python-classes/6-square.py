@@ -19,7 +19,7 @@ class Square:
         """ getter of position """
         return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """ Setter of position """
         if (not isinstance(value, tuple) or
