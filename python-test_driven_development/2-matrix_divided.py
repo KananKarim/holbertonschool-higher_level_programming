@@ -19,8 +19,8 @@ def matrix_divided(matrix, div):
 
 if __name__ == "__main__":
     matrix = [
-        [1, 2, "3"],
+        (1, 2, 3),
         [4, 5, 6]
     ]
-    print(matrix_divided(matrix, float("inf")))
+    print(matrix_divided(matrix, 2))
     print(matrix)
