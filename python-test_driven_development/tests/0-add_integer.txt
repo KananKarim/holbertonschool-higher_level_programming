@@ -8,6 +8,11 @@
 -3
 >>> add_integer(1.0, 2.0)
 3
+>>> add_integer(1, 2.4)
+3
+>>> add_integer(float("h"), 2.4)
+Traceback (most recent call last):
+ValueError: could not convert string to float: 'h'
 >>> add_integer("kanan", 3.0)
 Traceback (most recent call last):
 TypeError: a must be an integer
