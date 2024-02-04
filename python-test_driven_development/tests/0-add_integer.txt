@@ -1,0 +1,23 @@
+"""
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+>>> add_integer(-1, 2)
+1
+>>> add_integer(-1, -2)
+-3
+>>> add_integer(1.0, 2.0)
+3
+>>> add_integer("kanan", 3.0)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(5.0, "hello")
+Traceback (most recent call last):
+TypeError: b must be an integer
+>>> add_integer(1.0)
+99
+>>> add_integer(None, 10)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+"""
