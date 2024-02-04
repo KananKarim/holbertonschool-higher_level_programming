@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" Addition of two integers """
+
+
 def add_integer(a, b=98):
     """ This function adds two int """
     if not isinstance(a, float) and not isinstance(a, int):
