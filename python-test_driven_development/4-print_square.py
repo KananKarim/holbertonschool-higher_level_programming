@@ -3,6 +3,7 @@
 
 
 def print_square(size):
+    """ print square """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
@@ -18,7 +19,7 @@ def print_square(size):
 
 
 if __name__ == "__main__":
-    print_square(-1.3)
+    print_square(2)
     print("")
     print_square(10)
     print("")
