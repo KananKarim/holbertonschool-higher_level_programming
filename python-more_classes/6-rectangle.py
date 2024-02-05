@@ -3,9 +3,9 @@
 
 
 class Rectangle:
+    """ Body of rectangle class """
     number_of_instances = 0
 
-    """ Body of rectangle class """
     def __init__(self, width=0, height=0):
         """ İnitilazier method """
         self.width = width
