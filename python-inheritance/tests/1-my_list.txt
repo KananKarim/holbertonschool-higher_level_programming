@@ -1,0 +1,11 @@
+
+>>> MyList = __import__('1-my_list').MyList
+>>> l1 = MyList()
+>>> l1
+[]
+>>> l1.append(1)
+>>> l1
+[1]
+>>> l1.append(2)
+>>> l1
+[1, 2]
