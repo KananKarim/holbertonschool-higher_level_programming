@@ -1,1 +1,2 @@
-print(isinstance(1,object))
+
+print(issubclass(True,int))
