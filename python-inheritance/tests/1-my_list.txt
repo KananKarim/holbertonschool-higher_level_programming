@@ -42,10 +42,7 @@
 >>> l3.append(1)
 >>> l3
 [3, 2, 1]
->>> sorted_list = sorted(l3)
->>> sorted_list
+>>> l3.print_sorted()
 [1, 2, 3]
 >>> l3
 [3, 2, 1]
->>> l3 == sorted_list
-False
