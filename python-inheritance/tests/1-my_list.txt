@@ -36,3 +36,14 @@
 [3, -2, -1]
 >>> l2.print_sorted()
 [-2, -1, 3]
+>>> l3 = MyList()
+>>> l3.append(3)
+>>> l3.append(2)
+>>> l3.append(1)
+>>> l3
+[3, 2, 1]
+>>> sorted_list = sorted(l3)
+>>> sorted_list
+[1, 2, 3]
+>>> l3
+[3, 2, 1]
