@@ -1,2 +1,2 @@
-
-print(issubclass(True,int))
+l1 = []
+print(sorted(l1))

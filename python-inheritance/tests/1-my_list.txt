@@ -9,3 +9,30 @@
 >>> l1.append(2)
 >>> l1
 [1, 2]
+>>> l1.pop()
+2
+>>> l1
+[1]
+>>> l1.pop()
+1
+>>> l1
+[]
+>>> l1.append(3)
+>>> l1.append(2)
+>>> l1.append(1)
+>>> l1
+[3, 2, 1]
+>>> l1.print_sorted()
+[1, 2, 3]
+>>> l2 = MyList()
+>>> l2
+[]
+>>> l2.print_sorted()
+[]
+>>> l2.append(3)
+>>> l2.append(-2)
+>>> l2.append(-1)
+>>> l2
+[3, -2, -1]
+>>> l2.print_sorted()
+[-2, -1, 3]
