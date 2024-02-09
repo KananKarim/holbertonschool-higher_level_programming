@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """ body of the class """
     def __init__(self) -> None:
         """ Init method """
         pass
