@@ -46,6 +46,10 @@ class Rectangle(Base):
         if input < 0 and not check:
             raise ValueError(f"{name} must be >= 0")
 
+    def display(self):
+        for _ in range(self.__height):
+            print("#" * self.__width)
+
     @width.setter
     def width(self, width):
         """ width setter """
