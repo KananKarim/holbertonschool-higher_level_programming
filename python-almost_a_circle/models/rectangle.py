@@ -33,6 +33,10 @@ class Rectangle(Base):
         """ setter method """
         return self.__height
 
+    def area(self):
+        """ area method """
+        return self.__height * self.__width
+
     def validation(self, name, input, check):
         """ validation function """
         if not isinstance(input, int):
