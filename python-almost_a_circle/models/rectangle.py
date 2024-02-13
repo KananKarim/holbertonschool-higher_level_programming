@@ -33,26 +33,39 @@ class Rectangle(Base):
         """ setter method """
         return self.__height
 
+    def validation(self, name, input, check):
+        """ validation function """
+        if not isinstance(input, int):
+            raise TypeError(f"{name} must be an integer")
+        if input <= 0 and check:
+            raise ValueError(f"{name} must be > 0")
+        if input < 0 and not check:
+            raise ValueError(f"{name} must be >= 0")
+
     @width.setter
     def width(self, width):
         """ width setter """
+        self.validation("width", width, True)
         self.__width = width
         return self.__width
 
     @x.setter
     def x(self, x):
         """ x setter """
+        self.validation("x", x, False)
         self.__x = x
         return self.__x
 
     @y.setter
     def y(self, y):
         """ y setter """
+        self.validation("y", y, False)
         self.__y = y
         return self.__y
 
     @height.setter
     def height(self, height):
         """ height setter """
+        self.validation("height", height, True)
         self.__height = height
         return self.__height
