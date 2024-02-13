@@ -47,6 +47,7 @@ class Rectangle(Base):
             raise ValueError(f"{name} must be >= 0")
 
     def display(self):
+        """ display method """
         for _ in range(self.__height):
             print("#" * self.__width)
 
