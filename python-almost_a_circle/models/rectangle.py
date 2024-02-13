@@ -50,6 +50,12 @@ class Rectangle(Base):
         if input < 0 and not check:
             raise ValueError(f"{name} must be >= 0")
 
+    def update(self, *args):
+        """ update function """
+        attributes = ["id", "width", "height", "x", "y"]
+        for i, v in enumerate(args):
+            setattr(self, attributes[i], v)
+
     def display(self):
         """ display method """
         for _ in range(self.__y):
