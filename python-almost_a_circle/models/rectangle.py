@@ -37,6 +37,16 @@ class Rectangle(Base):
         """ setter method """
         return self.__height
 
+    def to_dictionary(self):
+        """ to dictionary """
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
+
     def area(self):
         """ area method """
         return self.__height * self.__width
