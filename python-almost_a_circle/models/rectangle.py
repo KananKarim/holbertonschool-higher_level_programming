@@ -50,11 +50,15 @@ class Rectangle(Base):
         if input < 0 and not check:
             raise ValueError(f"{name} must be >= 0")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update function """
-        attributes = ["id", "width", "height", "x", "y"]
-        for i, v in enumerate(args):
-            setattr(self, attributes[i], v)
+        if args:
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, v in enumerate(args):
+                setattr(self, attributes[i], v)
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
 
     def display(self):
         """ display method """
