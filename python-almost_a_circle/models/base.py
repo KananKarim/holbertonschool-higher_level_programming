@@ -57,5 +57,5 @@ class Base:
         with open(f"{cls_name}.json", "r") as file:
             obj = cls.from_json_string(file.read())
             for i in range(len(obj)):
-                obj[i] = cls.create(**obj[i])
+                obj[i] = cls.create(obj[i])
         return obj
