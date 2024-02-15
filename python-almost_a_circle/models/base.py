@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ documentation """
 import json
+import os
 
 
 class Base:
@@ -47,3 +48,14 @@ class Base:
             dummy = cls(21)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        cls_name = cls.__name__
+        if not os.path.isfile(f"{cls_name}.json"):
+            return []
+        with open(f"{cls_name}.json", "r") as file:
+            obj = cls.from_json_string(file.read())
+            for i in range(len(obj)):
+                obj[i] = cls.create(**obj[i])
+        return obj
